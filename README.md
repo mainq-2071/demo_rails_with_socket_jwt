@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Rails server
+```sh
+bundle install
+rails db:drop db:create db:migrate db:seed
+rails s
+```
 
-Things you may want to cover:
+### React Web
+```sh
+cd frontend
+```
+Create `.env` add `PORT=3030`
+```sh
+yarn
+yarn start
+```
 
-* Ruby version
+### Node socket
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```sh
+cd node_socket_io
+yarn
+node index.js
+```
